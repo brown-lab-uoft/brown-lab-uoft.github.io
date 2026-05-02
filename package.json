@@ -11,9 +11,22 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
-    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
     "pagefind": "^1.4.0",
     "preact": "^10.27.2",
     "tailwindcss": "^4.1.12"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brown-lab-uoft/brown-lab-uoft.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/brown-lab-uoft/brown-lab-uoft.github.io/issues"
+  },
+  "homepage": "https://github.com/brown-lab-uoft/brown-lab-uoft.github.io#readme"
 }
