@@ -116,6 +116,15 @@ jobs:
       id: pages
       uses: actions/configure-pages@v5
 
+    - name: Fix Tailwind CSS binary for Hugo
+      run: |
+        # Hugo requires the tailwindcss binary to start with #!/usr/bin/env node.
+        # pnpm creates a /bin/sh shell wrapper on Linux, which Hugo rejects.
+        # Replace it with a direct symlink to the .mjs entry that has the correct shebang.
+        if [ -f "node_modules/@tailwindcss/cli/dist/index.mjs" ]; then
+          ln -sf "../@tailwindcss/cli/dist/index.mjs" node_modules/.bin/tailwindcss
+        fi
+
     - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production
