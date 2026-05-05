@@ -1,247 +1,540 @@
-# [The Academic CV That Gets You Hired](https://github.com/HugoBlox/hugo-theme-academic-cv)
-
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=preview)
-
-<!-- TODO: Replace with a short demo video showing Hugo Chat generating an academic profile page -->
-<!-- https://github.com/user-attachments/assets/REPLACE_ME -->
-
-<h1 align="center">The Portfolio That Works While You Sleep</h1>
+# A website template for academics
 
 <p align="center">
-  <strong>Your unfair advantage in academia.</strong><br/>
-  Stop sending PDFs into the void. Build a living portfolio that boosts citations, attracts collaborators, and lands offers — all from simple Markdown files you own.<br/>
-  Built on <a href="https://github.com/HugoBlox/kit">HugoBlox</a> — the open-source framework where AI generates your pages and you own everything as Markdown.
+  <img src="images/screenshots/home-hero.png" alt="Home page — light and dark mode" width="900">
 </p>
 
 <p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=cta_top"><b>Deploy Free (60s)</b></a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://hugo.chat/?utm_source=github&utm_medium=readme&utm_content=cta_top_academic-cv"><b>Customize with AI</b></a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=demo">Live Demo</a>
+  <strong>A beautiful, production-ready Jekyll website for academics and research groups.</strong><br>
+  Fork it. Fill in your info. Publish.
 </p>
 
-<div align="center">
-
-  <a href="https://github.com/HugoBlox/hugo-theme-academic-cv">
-    <img src="https://img.shields.io/github/stars/HugoBlox/hugo-theme-academic-cv?label=Star&logo=github&style=flat-square&color=181717" alt="GitHub Stars">
-  </a>
-  <a href="https://discord.gg/z8wNYzb">
-    <img src="https://img.shields.io/discord/722225264733716590?label=Discord&logo=discord&logoColor=white&style=flat-square&color=5865F2" alt="Discord">
-  </a>
-  <a href="https://github.com/HugoBlox/kit">
-    <img src="https://img.shields.io/github/stars/HugoBlox/kit?label=HugoBlox&logo=github&style=flat-square&color=181717" alt="HugoBlox Stars">
-  </a>
-
-</div>
+<h3 align="center">
+  <a href="https://sbryngelson.github.io/academic-website-template/">See the live demo &rarr;</a>
+</h3>
 
 <p align="center">
-  <sub>Part of the <a href="https://github.com/HugoBlox/kit"><strong>HugoBlox</strong></a> ecosystem · Trusted by <strong>150,000+</strong> researchers at <strong>MIT, Stanford, Google & NVIDIA</strong> · Rated <strong>4.9/5</strong> (official survey) · Since <strong>2016</strong></sub>
+  <a href="#quick-start">Quick Start</a> &middot;
+  <a href="#features">Features</a> &middot;
+  <a href="#customization">Customization</a> &middot;
+  <a href="#publications">Publications</a> &middot;
+  <a href="#hosting">Hosting</a>
 </p>
 
----
+### Used by 200+ academics worldwide
 
-## Why This Template?
+<a href="https://ilafly.github.io/" target="_blank">★</a>
+<a href="https://i-vesseg.github.io/" target="_blank">★</a>
+<a href="https://xfangsn.github.io/" target="_blank">★</a>
+<a href="https://joshuagob.github.io" target="_blank">★</a>
+<a href="https://bczheng.com/" target="_blank">★</a>
+<a href="https://bazilinskyy.github.io/" target="_blank">★</a>
+<a href="https://www.coreytcallaghan.com/" target="_blank">★</a>
+<a href="https://minseoksong.github.io/" target="_blank">★</a>
+<a href="https://acme-group-cmu.github.io/" target="_blank">★</a>
+<a href="https://barrylee36.github.io/" target="_blank">★</a>
+<a href="https://adisun94.github.io/" target="_blank">★</a>
+<a href="https://comp-physics.group" target="_blank">★</a>
+<a href="https://spike.doc.ic.ac.uk/" target="_blank">★</a>
+<a href="http://www.msc.univ-paris-diderot.fr/~berhanu/" target="_blank">★</a>
+<a href="https://mashadab.github.io/" target="_blank">★</a>
+<a href="https://home.iitk.ac.in/~lalit/" target="_blank">★</a>
+<a href="https://ethan-pickering.github.io/" target="_blank">★</a>
+<a href="https://pedro-dm-gomes.github.io/" target="_blank">★</a>
+<a href="https://3tbk.github.io/3tbk/" target="_blank">★</a>
+<a href="https://felipesua.github.io/" target="_blank">★</a>
+<a href="https://shivvrat.github.io/" target="_blank">★</a>
+<a href="https://ritamraha.github.io/" target="_blank">★</a>
+<a href="https://matsesseldeurs.github.io/" target="_blank">★</a>
+<a href="https://michelleblom.github.io/" target="_blank">★</a>
+<a href="https://jrd971000.github.io/" target="_blank">★</a>
+<a href="https://melashri.net/" target="_blank">★</a>
+<a href="https://sahatulika15.github.io" target="_blank">★</a>
+<a href="https://mzhanglab.github.io" target="_blank">★</a>
+<a href="https://soar-lab.github.io" target="_blank">★</a>
+<a href="https://azharghafoor.github.io/" target="_blank">★</a>
+<a href="https://hyunwoo.info/" target="_blank">★</a>
+<a href="https://computervision0.github.io/" target="_blank">★</a>
+<a href="https://adrashid.github.io/personal-webpage/index.html" target="_blank">★</a>
+<a href="https://aleemkhan62.github.io/" target="_blank">★</a>
+<a href="https://vaibhavb007.github.io/" target="_blank">★</a>
+<a href="https://gabry993.github.io/" target="_blank">★</a>
+<a href="https://shantnuu.github.io/" target="_blank">★</a>
+<a href="https://wenbinluomath.github.io/" target="_blank">★</a>
+<a href="https://aibio-lab.github.io/" target="_blank">★</a>
+<a href="https://dartsushi.github.io/" target="_blank">★</a>
+<a href="https://efstathia-soufleri.github.io/" target="_blank">★</a>
+<a href="https://zchoffin.github.io/" target="_blank">★</a>
+<a href="https://wangyb97.github.io/" target="_blank">★</a>
+<a href="https://sgleem.github.io/" target="_blank">★</a>
+<a href="https://has97.github.io/" target="_blank">★</a>
+<a href="https://albertgassol1.github.io/" target="_blank">★</a>
+<a href="https://seanpark05.github.io/" target="_blank">★</a>
+<a href="https://miki998.github.io/" target="_blank">★</a>
+<a href="https://wilfonba.github.io/" target="_blank">★</a>
+<a href="https://saharnazb.github.io/" target="_blank">★</a>
+<a href="https://mvmacfarlane.github.io/" target="_blank">★</a>
+<a href="https://saharnaz.org/" target="_blank">★</a>
+<a href="https://www.isnicholas.com/" target="_blank">★</a>
+<a href="https://jojox666.github.io/" target="_blank">★</a>
+<a href="https://zhiyu7.github.io/" target="_blank">★</a>
+<a href="https://awen-li.github.io/" target="_blank">★</a>
+<a href="https://yukiiwong.github.io/" target="_blank">★</a>
+<a href="https://joeyleehk.github.io/" target="_blank">★</a>
+<a href="https://fabayocbocjr.github.io/" target="_blank">★</a>
+<a href="https://www.quantumcookie.xyz/" target="_blank">★</a>
+<a href="https://adityanandy.github.io/" target="_blank">★</a>
+<a href="https://jlastro.github.io/" target="_blank">★</a>
+<a href="https://yunzhe-li.top/" target="_blank">★</a>
+<a href="https://xia-hu.github.io/" target="_blank">★</a>
+<a href="https://p-bajpai.github.io/" target="_blank">★</a>
+<a href="https://aashen12.github.io/" target="_blank">★</a>
+<a href="https://Abdurrahheem.github.io/" target="_blank">★</a>
+<a href="https://abhimanyu911.github.io/" target="_blank">★</a>
+<a href="https://abhishek-sehgal.github.io/" target="_blank">★</a>
+<a href="https://adityaIyerramesh98.github.io/" target="_blank">★</a>
+<a href="https://AdityaSinghDevs.github.io/" target="_blank">★</a>
+<a href="https://aipsita.github.io/" target="_blank">★</a>
+<a href="https://albertopadovan.github.io/" target="_blank">★</a>
+<a href="https://alirezanorouziazad.github.io/" target="_blank">★</a>
+<a href="https://amy-tabb.github.io/" target="_blank">★</a>
+<a href="https://anedelin.github.io/" target="_blank">★</a>
+<a href="https://ansharora7.github.io/" target="_blank">★</a>
+<a href="https://avadapal.github.io/" target="_blank">★</a>
+<a href="https://avibagchi.github.io/" target="_blank">★</a>
+<a href="https://bc1032.github.io/" target="_blank">★</a>
+<a href="https://BDalheimer.github.io/" target="_blank">★</a>
+<a href="https://Bennibraun.github.io/" target="_blank">★</a>
+<a href="https://binbin-xie.github.io/" target="_blank">★</a>
+<a href="https://BiomedLabUGgt.github.io/" target="_blank">★</a>
+<a href="https://c752334430.github.io/" target="_blank">★</a>
+<a href="https://Chemical118.github.io/" target="_blank">★</a>
+<a href="https://chihaoy.github.io/" target="_blank">★</a>
+<a href="https://cjaynjoku.github.io/" target="_blank">★</a>
+<a href="https://DennisWayo.github.io/" target="_blank">★</a>
+<a href="https://dginsberg.github.io/" target="_blank">★</a>
+<a href="https://dgiovanis.github.io/" target="_blank">★</a>
+<a href="https://donghuison.github.io/" target="_blank">★</a>
+<a href="https://donghuixin.github.io/" target="_blank">★</a>
+<a href="https://drgHannah.github.io/" target="_blank">★</a>
+<a href="https://DrWeiChen.github.io/" target="_blank">★</a>
+<a href="https://econpotter.github.io/" target="_blank">★</a>
+<a href="https://elitalobo.github.io/" target="_blank">★</a>
+<a href="https://emilyvansyoc.github.io/" target="_blank">★</a>
+<a href="https://Erd-ling.github.io/" target="_blank">★</a>
+<a href="https://estimation-control-learning-laboratory.github.io/" target="_blank">★</a>
+<a href="https://EthanJ666.github.io/" target="_blank">★</a>
+<a href="https://f-farhan.github.io/" target="_blank">★</a>
+<a href="https://fekaputra.github.io/" target="_blank">★</a>
+<a href="https://FishyguyNeel.github.io/" target="_blank">★</a>
+<a href="https://flampouris.github.io/" target="_blank">★</a>
+<a href="https://flavio2018.github.io/" target="_blank">★</a>
+<a href="https://Frellaa.github.io/" target="_blank">★</a>
+<a href="https://gabrielpachecoribeiro.github.io/" target="_blank">★</a>
+<a href="https://gcg-helsinki.github.io/" target="_blank">★</a>
+<a href="https://giorgioarcara.github.io/" target="_blank">★</a>
+<a href="https://gmtang1212.github.io/" target="_blank">★</a>
+<a href="https://gmurtaza404.github.io/" target="_blank">★</a>
+<a href="https://Grupo-MATE.github.io/" target="_blank">★</a>
+<a href="https://guancai.github.io/" target="_blank">★</a>
+<a href="https://guharoysayak.github.io/" target="_blank">★</a>
+<a href="https://haochey.github.io/" target="_blank">★</a>
+<a href="https://HC-teemo.github.io/" target="_blank">★</a>
+<a href="https://heymarco.github.io/" target="_blank">★</a>
+<a href="https://hkkaushik.github.io/" target="_blank">★</a>
+<a href="https://HORIZON-COVER.github.io/" target="_blank">★</a>
+<a href="https://hrositi.github.io/" target="_blank">★</a>
+<a href="https://hsparkastro.github.io/" target="_blank">★</a>
+<a href="https://hyojoonkim.github.io/" target="_blank">★</a>
+<a href="https://JamesL404.github.io/" target="_blank">★</a>
+<a href="https://jasonarothman.github.io/" target="_blank">★</a>
+<a href="https://Jeffery-Zhou.github.io/" target="_blank">★</a>
+<a href="https://jianxyou.github.io/" target="_blank">★</a>
+<a href="https://Jiawei-sn.github.io/" target="_blank">★</a>
+<a href="https://jortizcs.github.io/" target="_blank">★</a>
+<a href="https://jtonos.github.io/" target="_blank">★</a>
+<a href="https://JudithBouman2412.github.io/" target="_blank">★</a>
+<a href="https://jujubonda.github.io/" target="_blank">★</a>
+<a href="https://jumeike.github.io/" target="_blank">★</a>
+<a href="https://Kadle11.github.io/" target="_blank">★</a>
+<a href="https://KaihangShi.github.io/" target="_blank">★</a>
+<a href="https://KALU-KELECHI-GABRIEL.github.io/" target="_blank">★</a>
+<a href="https://Khris-VI.github.io/" target="_blank">★</a>
+<a href="https://KieuTruong.github.io/" target="_blank">★</a>
+<a href="https://Koromonnnnnnnn.github.io/" target="_blank">★</a>
+<a href="https://ktvank.github.io/" target="_blank">★</a>
+<a href="https://Kunlun-Zhu.github.io/" target="_blank">★</a>
+<a href="https://kwakkyoleen.github.io/" target="_blank">★</a>
+<a href="https://leowangx2013.github.io/" target="_blank">★</a>
+<a href="https://lokingdav.github.io/" target="_blank">★</a>
+<a href="https://ltinphan.github.io/" target="_blank">★</a>
+<a href="https://lzy37ld.github.io/" target="_blank">★</a>
+<a href="https://manshri.github.io/" target="_blank">★</a>
+<a href="https://martinezach.github.io/" target="_blank">★</a>
+<a href="https://minhphd.github.io/" target="_blank">★</a>
+<a href="https://mohamed-s-ibrahim.github.io/" target="_blank">★</a>
+<a href="https://mohammedaflah.github.io/" target="_blank">★</a>
+<a href="https://monroyaume5.github.io/" target="_blank">★</a>
+<a href="https://mrajiullah.github.io/" target="_blank">★</a>
+<a href="https://msstate-athena.github.io/" target="_blank">★</a>
+<a href="https://mvanwyngarden.github.io/" target="_blank">★</a>
+<a href="https://Naeele.github.io/" target="_blank">★</a>
+<a href="https://Nebularaid2000.github.io/" target="_blank">★</a>
+<a href="https://neuronpain.github.io/" target="_blank">★</a>
+<a href="https://NickJi98.github.io/" target="_blank">★</a>
+<a href="https://noahzegna.github.io/" target="_blank">★</a>
+<a href="https://overlorde.github.io/" target="_blank">★</a>
+<a href="https://p4rkerw.github.io/" target="_blank">★</a>
+<a href="https://Penghuihuang2000.github.io/" target="_blank">★</a>
+<a href="https://Pragati-Meshram.github.io/" target="_blank">★</a>
+<a href="https://qianhuimen.github.io/" target="_blank">★</a>
+<a href="https://qzkiyoshi.github.io/" target="_blank">★</a>
+<a href="https://ricethchang.github.io/" target="_blank">★</a>
+<a href="https://robenlunardi.github.io/" target="_blank">★</a>
+<a href="https://royess.github.io/" target="_blank">★</a>
+<a href="https://rupendra248.github.io/" target="_blank">★</a>
+<a href="https://SantiagoxSosa.github.io/" target="_blank">★</a>
+<a href="https://saorisakaue.github.io/" target="_blank">★</a>
+<a href="https://SelzerConst.github.io/" target="_blank">★</a>
+<a href="https://sherdencooper.github.io/" target="_blank">★</a>
+<a href="https://shsjxzh.github.io/" target="_blank">★</a>
+<a href="https://Smadx.github.io/" target="_blank">★</a>
+<a href="https://sophie-carneiro.github.io/" target="_blank">★</a>
+<a href="https://ssun32.github.io/" target="_blank">★</a>
+<a href="https://st-eislab.github.io/" target="_blank">★</a>
+<a href="https://suprovo97.github.io/" target="_blank">★</a>
+<a href="https://takouajendoubi.github.io/" target="_blank">★</a>
+<a href="https://ThomasMartinez0.github.io/" target="_blank">★</a>
+<a href="https://thu-gyt.github.io/" target="_blank">★</a>
+<a href="https://tokeron.github.io/" target="_blank">★</a>
+<a href="https://ttadano.github.io/" target="_blank">★</a>
+<a href="https://valentinsix.github.io/" target="_blank">★</a>
+<a href="https://victorolaiya.github.io/" target="_blank">★</a>
+<a href="https://vmetsis.github.io/" target="_blank">★</a>
+<a href="https://wanganzhi.github.io/" target="_blank">★</a>
+<a href="https://wjin4.github.io/" target="_blank">★</a>
+<a href="https://wufan-here.github.io/" target="_blank">★</a>
+<a href="https://wumirose.github.io/" target="_blank">★</a>
+<a href="https://xianzhangchen.github.io/" target="_blank">★</a>
+<a href="https://xietian1.github.io/" target="_blank">★</a>
+<a href="https://Xueyi-Wang.github.io/" target="_blank">★</a>
+<a href="https://xyhanO.github.io/" target="_blank">★</a>
+<a href="https://yasserfarouk.github.io/" target="_blank">★</a>
+<a href="https://yewenC.github.io/" target="_blank">★</a>
+<a href="https://yilevine.github.io/" target="_blank">★</a>
+<a href="https://ykl7.github.io/" target="_blank">★</a>
+<a href="https://yminzhang.github.io/" target="_blank">★</a>
+<a href="https://yuminglab.github.io/" target="_blank">★</a>
+<a href="https://zeyuD.github.io/" target="_blank">★</a>
+<a href="https://zhoulongyu.github.io/" target="_blank">★</a>
 
-Most academic CVs are static PDFs that get lost in the pile. This is an **always-on portfolio** that works 24/7 to advance your career:
-
-- **Students & grads** applying to top labs and industry roles — stand out with a living portfolio, not a flat PDF
-- **Researchers** who want a citable online presence with publications, projects, and talks in one place
-- **Faculty & PIs** showcasing their lab, group news, and team members
-- **Anyone with publications** who wants auto-imported citations from BibTeX/DOI without manual formatting
-
-> *"My citations went up 3x after switching to this template. Colleagues started finding my work through Google Scholar links back to my site. The BibTeX auto-sync is a lifesaver."*
-> — **Dr. Li Zhang**, AI Research Scientist
-
-> *"I set this up during a weekend and my PhD students had their profiles live by Monday. They just edit Markdown — no tickets to IT, no WordPress logins."*
-> — **Prof. Sarah Chen**, Computer Science, ETH Zürich
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=cta_mid">
-    <img src="https://img.shields.io/badge/⚡️%20Deploy%20Your%20CV%20in%2060s-7c3aed?style=for-the-badge" alt="Deploy this template" width="400">
-  </a>
-</p>
+__Using this template? Share your site and I'll add it here!__
 
 ---
 
 ## Features
 
-| Feature | Benefit |
-| :--- | :--- |
-| **BibTeX / DOI auto-import** | Drop in a `.bib` file — publication pages generated automatically with proper citations. |
-| **Jupyter & RMarkdown** | Publish `.ipynb` notebooks as beautiful posts — code, outputs, and narrative intact. |
-| **LaTeX math** | Native rendering for equations and technical writing. |
-| **Markdown slides** | Present with reveal.js — math, syntax highlighting, diagrams, speaker notes. |
-| **SEO & AI-ready** | Optimized for search engines and LLMs — your work gets found, cited, and recommended. |
-| **AI page generation** | Describe what you need to [Hugo Chat](https://hugo.chat/?utm_source=github&utm_medium=readme&utm_content=features_academic-cv) — get structured pages with correct front matter instantly. |
-| **Visual editor** | Drag-and-drop blocks in VS Code with [Ownable CMS](https://marketplace.visualstudio.com/items?itemName=ownable.ownable). No coding needed. |
-| **Plain Markdown** | Every file is human-readable. No database, no lock-in, take your content anywhere. |
-| **Free hosting** | Deploy to GitHub Pages, Netlify, Vercel, or Cloudflare — all free tier. |
+### Design
+- **Source Serif 4 + DM Sans** typography — elegant serif headings paired with a clean geometric sans body
+- **Warm parchment palette** with subtle noise texture for depth, not flat generic whites
+- **Dark mode** — toggle in navbar, auto-detects system preference, persists across visits
+- **Frosted glass navbar** with backdrop blur, active page indicator, and scroll shadow
+- **Dynamic SVG favicon** — auto-generated from your initials + accent color
+- **Responsive** — CSS Grid layouts that adapt from desktop to tablet to mobile
 
----
+### Interactions
+- **Site-wide search** — press `Cmd+K` (or `Ctrl+K`) to instantly search all pages
+- **Copy BibTeX** — hover any bibtex block to reveal a one-click copy button
+- **Animated link underlines** — smooth gradient underlines that grow on hover
+- **Card hover effects** — lift + shadow on team cards, research cards, and profile photo
+- **Image zoom** — subtle scale on hover for team photos, research thumbnails, and the banner
+- **Back-to-top button** — appears on scroll, smooth scrolls up
+- **Smooth expand/collapse** — CSS transitions on publication abstracts and BibTeX entries
 
-## 🚀 Get Started
+### Publications
+- **Auto-generated from BibTeX** via Jekyll Scholar — just edit `assets/ref.bib`
+- **Search bar** — filter publications by title, author, or year
+- **Year badges** — small accent-colored pills for quick scanning
+- **Pill buttons** — PDF, DOI, arXiv, BIB, Abstract
 
-### Step 1: Deploy Your Site
+### For New Users
+- **Interactive setup script** — run `./setup.sh` to fill in your name, title, and institution
+- **4-step `_config.yml`** — numbered sections with inline comments guide you through setup
+- **Well-commented data files** — every field in `_data/*.yml` is explained with examples
+- **Smart link handling** — empty links in config are automatically hidden (no broken icons)
 
-**Option A: Launch in browser** (fastest — no install needed)
+### Technical
+- **Modular SASS** — organized into `base/`, `components/`, `layouts/`, `utilities/`
+- **Selective Bootstrap 5.3.3** — only imports the modules used, not the full bundle
+- **Single JS file** (4KB minified) — dark mode, search, toggles, scroll effects, copy button
+- **Auto-generated sitemap** via `jekyll-sitemap`
+- **Open Graph + Twitter Cards** — links look good when shared on social media
+- **MathJax 3** — LaTeX formula rendering out of the box
 
-> [!TIP]
-> Deploy a live site in 60 seconds — no software to install:
-> [**Deploy Academic CV free**](https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=get_started)
+## Screenshots
 
-**Option B: Use the CLI**
+| | |
+|:---:|:---:|
+| ![Publications](images/screenshots/publications.png) | ![Team](images/screenshots/team.png) |
+| Publications with search & year badges | Team page with card grid |
+| ![Search](images/screenshots/search.png) | |
+| Site-wide search (Cmd+K) | |
+
+## Quick Start
+
+1. **Fork** [this repository](https://github.com/sbryngelson/academic-website-template)
+2. **Delete** `_config_demo.yml` (it's only for the demo site)
+3. **Install** [Jekyll](https://jekyllrb.com/docs/installation/) and run `bundle install`
+3. **Configure** your site:
+   ```bash
+   ./setup.sh          # interactive setup, or
+   vim _config.yml     # edit Steps 1-4 directly
+   ```
+4. **Add your publications** to `assets/ref.bib`
+5. **Customize** data files in `_data/` (team members, news, awards, etc.)
+6. **Preview** your site:
+   ```bash
+   bundle exec jekyll serve
+   # open http://localhost:4000
+   ```
+
+## Detailed How-To Guide
+
+### Step 1: Fork and Clone
 
 ```bash
-# Requires Hugo Extended & Node.js
-npx hugoblox create site --template academic-cv
+# Fork the repo on GitHub, then clone your fork
+git clone https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.git
+cd YOUR_USERNAME.github.io
 ```
 
-### Step 2: Customize With AI + Visual Editing
+### Step 2: Install Dependencies
 
-<table>
-<tr>
-<td width="50%">
+You need Ruby and Jekyll installed. See [Jekyll's installation guide](https://jekyllrb.com/docs/installation/).
 
-**✨ Hugo Chat** — AI customization
+```bash
+# Install Ruby gems
+bundle install
 
-Tell Hugo Chat what you want in plain English. It generates structured pages with the right front matter, shortcodes, and blocks for this template.
+# Optional: install Node.js dependencies (only needed if you want to edit JS)
+npm install
+```
 
-> *"Add a publications page with my 2024 papers from this BibTeX file"*
+### Step 3: Configure Your Identity
 
-[**Try Hugo Chat — free**](https://hugo.chat/?utm_source=github&utm_medium=readme&utm_content=step2_academic-cv)
+Open `_config.yml` and fill in your information. The file is organized into numbered steps:
 
-</td>
-<td width="50%">
+```yaml
+# STEP 1: Your Identity
+name: "Jane Smith"
+title: "Assistant Professor of Computer Science"
+institution: "Stanford University"
+email: jsmith@stanford.edu
+photo: headshot.jpg   # place your photo in images/
+```
 
-**Ownable CMS** — visual editing in VS Code
+Or run the interactive setup script:
 
-1. Install [Ownable CMS](https://marketplace.visualstudio.com/items?itemName=ownable.ownable)
-2. Open your project in VS Code
-3. Click the Ownable icon to start editing visually
+```bash
+./setup.sh
+```
 
-</td>
-</tr>
-</table>
+### Step 4: Add Your Links
 
-![Ownable CMS in Action](https://raw.githubusercontent.com/HugoBlox/kit/main/.github/media/studio/slide-1.webp)
-*Ownable CMS: Drag-and-drop page builder inside VS Code.*
+Still in `_config.yml`, add your academic profiles. Delete any you don't use:
 
-> [!NOTE]
-> **New to Hugo?** No problem. You don't need to know Hugo — edit visually or write Markdown. Hugo is the engine under the hood that makes your site fast, secure, and free to host. [Learn more →](https://docs.ownable.dev/?utm_source=github&utm_medium=readme&utm_content=docs_academic-cv)
+```yaml
+# STEP 2: Your Links
+links:
+  google_scholar: "https://scholar.google.com/citations?user=YOUR_ID"
+  github: "https://github.com/yourusername"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+  cv: "papers/cv.pdf"        # place your CV in the papers/ directory
+  twitter: ""                # leave blank to hide
+  linkedin: ""
+```
+
+### Step 5: Add Your Photo
+
+Place your profile photo in the `images/` directory. Update the `photo` field in `_config.yml` to match the filename.
+
+### Step 6: Add Publications
+
+Edit `assets/ref.bib` with your BibTeX entries. The publications page is auto-generated. Example:
+
+```bibtex
+@article{smith2024,
+  author = {Smith, Jane and Doe, John},
+  title = {A Novel Approach to Machine Learning},
+  journal = {Nature},
+  year = {2024},
+  volume = {42},
+  pages = {1--10},
+  doi = {10.1234/example},
+  file = {smith2024.pdf},       % place PDF in papers/
+  abstract = {We present...}
+}
+```
+
+To bold your name in the publication list, update the scholar settings in `_config.yml`:
+
+```yaml
+scholar:
+  last_name: Smith
+  first_name: [Jane, J.]
+```
+
+Then uncomment the name-bolding line in `_layouts/bibtemplate.html`.
+
+### Step 7: Add Team Members
+
+Edit `_data/team_members.yml`:
+
+```yaml
+- name: Alice Johnson
+  photo: alice.jpg          # place in images/ or images/team/
+  info: PhD Student, started Fall 2023
+  email: alice@university.edu
+  website: https://alice.dev
+  github: https://github.com/alice
+```
+
+### Step 8: Add News
+
+Edit `_data/news.yml` (newest first):
+
+```yaml
+- date: 15 March, 2024
+  headline: "Our paper on X was accepted to NeurIPS!"
+
+- date: 1 January, 2024
+  headline: "Welcome to new PhD student Alice Johnson"
+```
+
+### Step 9: Customize Pages
+
+Each page in `_pages/` is a Markdown file. Edit the content directly:
+
+- `home.md` — your welcome text and bio
+- `research.md` — describe your research areas
+- `software.md` — list your software projects
+- `teaching.md` — list your courses
+
+To remove a page from the navbar, comment it out in `_config.yml`:
+
+```yaml
+nav_pages:
+  - name: about
+  - name: publications
+  # - name: talks        # hidden from navbar
+  - name: research
+```
+
+### Step 10: Preview and Deploy
+
+```bash
+# Preview locally
+bundle exec jekyll serve
+# Visit http://localhost:4000
+
+# When ready, push to GitHub
+git add -A
+git commit -m "My academic website"
+git push
+```
+
+A GitHub Actions workflow automatically builds and deploys your site on every push. Make sure to go to **Settings > Pages > Source** in your repo and select **GitHub Actions**.
+
+Your site will be live at `https://YOUR_USERNAME.github.io` within a few minutes.
 
 ---
 
-## 💎 Go Premium
+## Customization
 
-Love the free version? **Academic CV Pro** and **Resume Pro** take it further:
+### _config.yml
 
-- Premium designs that make an unforgettable first impression
-- Advanced timeline and layout options
-- Full-featured course/lecture sections
-- Remove attribution, priority support
+The config file is organized into 4 numbered steps:
 
-| | **Academic CV** (Free) | **Academic CV Pro** |
-| :--- | :---: | :---: |
-| Design | Professional & clean | **Premium designs** |
-| Layouts | Standard sections | **Advanced timelines** |
-| Courses/lectures | Basic | **Full-featured** |
-| Support | Community | **Priority** |
+| Step | Section | What to fill in |
+|------|---------|-----------------|
+| 1 | **Your Identity** | Name, title, institution, email, photo |
+| 2 | **Your Links** | Google Scholar, GitHub, ORCID, Twitter, LinkedIn, CV |
+| 3 | **Site Settings** | Accent color, dark mode toggle, analytics |
+| 4 | **Your Pages** | Comment out any pages you don't need |
 
-<p align="center">
-  <a href="https://hugoblox.com/pricing?utm_source=github&utm_medium=readme&utm_content=premium_academic-cv"><b>Compare plans</b></a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://hugoblox.com/templates/academic-cv-pro?utm_source=github&utm_medium=readme&utm_content=premium_deploy_academic-cv"><b>Deploy Academic CV Pro</b></a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://hugoblox.com/templates/resume-pro?utm_source=github&utm_medium=readme&utm_content=premium_deploy_resume"><b>Deploy Resume Pro</b></a>
-</p>
+### Data Files
 
----
+| File | Purpose |
+|------|---------|
+| `_data/team_members.yml` | Current students and postdocs |
+| `_data/alumni.yml` | Former lab members |
+| `_data/news.yml` | News items (3 most recent shown on home) |
+| `_data/awards.yml` | Awards and honors |
+| `_data/grants.yml` | Grants and funding |
+| `_data/funders.yml` | Funder logos |
+| `_data/people.yml` | Students and mentees |
+| `_data/pi.yml` | Optional: detailed education for About page |
 
-## 🏆 Why HugoBlox?
+Each file has inline comments explaining every field. Entries marked `# EXAMPLE` should be replaced or deleted.
 
-> *Why not just use WordPress, Webflow, or an AI builder like Lovable?*
+### Pages
 
-| | **AI builders** (Lovable, v0) | **CMS platforms** (WordPress, Webflow) | **HugoBlox** |
-| :--- | :---: | :---: | :---: |
-| AI generates your pages | Yes | No | **Yes** |
-| You own the output as readable files | No — React code | No — database | **Yes — Markdown** |
-| Free to host forever | No | No | **Yes** |
-| Human-editable without the tool | Barely | No | **Yes — it's Markdown** |
-| Open source | No | No | **Yes — MIT licensed** |
+All pages are in `_pages/`. Edit the Markdown content directly. Pages use the `gridlay` layout by default.
 
-> [!IMPORTANT]
-> Your content is plain Markdown files. No lock-in, no database, no vendor dependency. If you ever want to leave, take your files and go.
+### Accent Color & Dark Mode
 
----
+Set `accent_color` in `_config.yml` to change the theme color across the entire site (links, buttons, highlights, favicon). Set `dark_mode: false` to disable the dark mode toggle entirely.
 
-## FAQ
+### CSS & JS Customization
 
-<details>
-<summary><b>Do I need to know Hugo?</b></summary>
-No. Edit visually with Ownable CMS or write Markdown. Hugo is the build engine — you don't need to touch it.
-</details>
+The site uses modular SASS in `_sass/`:
 
-<details>
-<summary><b>Can I import my existing publications?</b></summary>
-Yes. Drop a BibTeX file and publication pages are generated automatically with proper citations, metadata, and links.
-</details>
+```
+_sass/
+  base/          # variables, typography, reset
+  components/    # card, navbar, buttons, footer, profile, publication, search
+  layouts/       # home grid, team grid, research grid
+  utilities/     # dark mode, animations
+```
 
-<details>
-<summary><b>Can I host for free?</b></summary>
-Yes. GitHub Pages, Netlify, Vercel, and Cloudflare Pages all have free tiers for static sites.
-</details>
+For JavaScript, edit `assets/js/site.js` then run `npm run build` to minify. Pre-built JS is committed, so `npm` is only needed if you modify the source.
 
-<details>
-<summary><b>Can I migrate my content later?</b></summary>
-Yes. Your site is just Markdown files in a folder. Copy them anywhere.
-</details>
+## Publications
 
-<details>
-<summary><b>What's Hugo Chat?</b></summary>
-An AI assistant trained on Hugo and HugoBlox docs. Describe what you want and it generates the right pages with correct front matter. <a href="https://hugo.chat/?utm_source=github&utm_medium=readme&utm_content=faq_academic-cv">Free to try.</a>
-</details>
+Publications are managed via [Jekyll Scholar](https://github.com/inukshuk/jekyll-scholar) using BibTeX. Edit `assets/ref.bib` with your references.
 
-<details>
-<summary><b>Can I cancel Pro anytime?</b></summary>
-Yes. No questions asked.
-</details>
+Update `scholar.last_name` and `scholar.first_name` in `_config.yml` to auto-bold your name in the publication list.
 
----
+## Hosting
 
-<h2 align="center">🚀 Ready to launch?</h2>
+### GitHub Pages
 
-<p align="center">
-  Deploy in 60 seconds. Customize with AI. Own it as Markdown forever.
-</p>
+Fork this repo as `your_username.github.io` and push. A **GitHub Actions workflow** is included (`.github/workflows/deploy.yml`) that automatically builds the site with Jekyll Scholar and deploys to GitHub Pages on every push to `source`.
 
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=cta_final"><b>Deploy Academic CV — free</b></a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://hugo.chat/?utm_source=github&utm_medium=readme&utm_content=cta_final_academic-cv"><b>Customize with AI</b></a>
-</p>
+To enable it: go to your repo's **Settings > Pages > Source** and select **GitHub Actions** instead of "Deploy from a branch".
 
----
+### Custom Domain
 
-## Community & Support
+Purchase a domain, update the `CNAME` file, and configure DNS. See [GitHub's guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
 
-- 💬 [**Discord**](https://discord.gg/z8wNYzb) — ask questions, share your site
-- 📚 [**Docs**](https://docs.ownable.dev/?utm_source=github&utm_medium=readme&utm_content=community_academic-cv)
-- ⭐ [**Star HugoBlox**](https://github.com/HugoBlox/kit) — help others find it
-- 🐦 [**Follow on X**](https://x.com/GoOwnable)
+### Self-Hosting
 
-### Sponsors
+Build with `bundle exec jekyll serve`, then upload `_site/` to your server. Set `url` and `baseurl` in `_config.yml` accordingly.
 
-[**❤️ Sponsor on GitHub**](https://github.com/sponsors/gcushen) | [**🏢 Become a Partner**](https://github.com/sponsors/gcushen)
+## Upgrading
 
----
+Coming from the previous version? See [UPGRADING.md](UPGRADING.md).
 
-Copyright 2016-present [**Lore Labs**](https://lore.tech/?utm_source=github&utm_medium=readme).
-Released under the [MIT License](./LICENSE.md).
+## Alternatives
 
-<p align="center">
-  <sub>HugoBlox is a trademark of Lore Labs.</sub>
-</p>
+* [al-folio](https://github.com/alshedivat/al-folio)
+* [academicpages](https://academicpages.github.io/)
+* [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/)
 
-<!--START_SECTION:news-->
-<!--END_SECTION:news-->
+## Acknowledgment
+
+I credit the [Allen Lab](https://www.allanlab.org/) for creating a beautiful academic research group webpage. Many parts of this site were adopted or copied from their laboratory webpage.
+
+## License
+
+MIT

@@ -1,32 +1,13 @@
 {
-  "name": "hugo-blox-academic-cv-starter",
-  "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@10.14.0",
-  "description": "Academic CV starter template for Hugo Blox with Tailwind CSS v4",
   "scripts": {
-    "dev": "hugo server --disableFastRender",
-    "build": "hugo --minify && pnpm run pagefind",
-    "pagefind": "pagefind --site public"
+    "build:js": "esbuild assets/js/site.js --bundle --minify --outfile=assets/js/site.min.js",
+    "build": "npm run build:js"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.12",
-    "@tailwindcss/typography": "^0.5.19",
-    "pagefind": "^1.4.0",
-    "preact": "^10.27.2",
-    "tailwindcss": "^4.1.12"
+    "bootstrap": "5.3.3"
   },
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brown-lab-uoft/brown-lab-uoft.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/brown-lab-uoft/brown-lab-uoft.github.io/issues"
-  },
-  "homepage": "https://github.com/brown-lab-uoft/brown-lab-uoft.github.io#readme"
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
 }

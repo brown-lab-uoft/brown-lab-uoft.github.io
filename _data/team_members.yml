@@ -1,0 +1,20 @@
+# Current students and postdocs.
+# Each entry needs: name, photo, info
+# Optional: email, website, scholar, github, researchgate, cv
+# Photos go in images/ or images/team/
+
+- name: "Luísa Gerhard"
+  photo: rock.jpg
+  info: "PhD Student (incoming, Fall 2026)"
+
+- name: "Qichen (Martin) Nie"
+  photo: rock.jpg
+  info: "PhD Student (incoming, Fall 2026)"
+
+- name: "Carlos Liu"
+  photo: rock.jpg
+  info: "PhD Student (incoming, Fall 2026)"
+
+- name: "This could be you!"
+  photo: rock.jpg
+  info: See openings for more info

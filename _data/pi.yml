@@ -1,0 +1,9 @@
+# Education displayed on About page (full) and sidebar (short).
+# Basic identity (name, photo, links) lives in _config.yml.
+
+- education:
+    - "(2024) Postdoctoral Fellow in Chemistry, Massachusetts Institute of Technology"
+    - "(2019) Ph.D. Chemical and Biomolecular Engineering, Cornell University"
+  educationshort:
+    - "(2024) Postdoc, MIT"
+    - "(2019) Ph.D. ChBE, Cornell University"
