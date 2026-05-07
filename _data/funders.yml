@@ -3,7 +3,7 @@
 # Recommended logo size: max-height 80px
 
 # EXAMPLE -- replace or delete
-  - image: ac-logo.png
+  - image: ac_logo.png
     url: https://acceleration.utoronto.ca/
   - image: uoft_logo.png
     url: https://www.pharmacy.utoronto.ca/

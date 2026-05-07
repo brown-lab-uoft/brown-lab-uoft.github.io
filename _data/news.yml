@@ -1,20 +1,19 @@
-# News items shown on the home page sidebar.
-# The 3 most recent are shown; all appear on /allnews.
-# Each entry needs: date, headline
-- date: 6 February, 1986
-  headline: "Appointed to the Rogers Commission investigating the Space Shuttle Challenger disaster"
+# News items.
+# The 3 most recent are shown on the home page sidebar; all appear on /news/.
+#
+# Required fields:
+#   date      — display string, e.g. "April 15, 2025"
+#   headline  — short title (1 sentence)
+#
+# Optional fields:
+#   description — 2–3 sentences of detail shown on the /news/ page
+#   image       — path relative to images/, e.g. "news/paper-jacs-2025.jpg"
+#   link        — URL to link the headline to (paper, press article, etc.)
 
-- date: 1 January, 1980
-  headline: "National Medal of Science awarded by President Carter"
+- date: "January 1, 2025"
+  headline: "Brown Lab website launched"
+  description: "The Brown Lab at the University of Toronto has launched its new website. The site will feature lab news, publications, research highlights, and team information. Check back regularly for updates."
 
-- date: 21 October, 1965
-  headline: "Awarded the Nobel Prize in Physics for contributions to quantum electrodynamics"
-
-- date: 1 September, 1961
-  headline: "The Feynman Lectures on Physics begins publication"
-
-- date: 1 June, 1959
-  headline: "Delivered 'There's Plenty of Room at the Bottom' talk at Caltech APS meeting"
-
-- date: 1 January, 1951
-  headline: "Joined the faculty at California Institute of Technology"
+- date: "September 1, 2024"
+  headline: "Brown Lab opens at the Leslie Dan Faculty of Pharmacy"
+  description: "Joseph S. Brown joins the University of Toronto as an Assistant Professor in the Leslie Dan Faculty of Pharmacy. The lab will focus on self-driving laboratories for peptide drug discovery, combining automated chemistry with machine learning."

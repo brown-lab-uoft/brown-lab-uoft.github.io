@@ -55,12 +55,14 @@
       var entries = document.querySelectorAll('[data-pub-searchable]');
 
       entries.forEach(function (entry) {
+        // Hide the whole <li> (including its number marker) not just the inner div
+        var item = entry.closest('li') || entry;
         if (!query) {
-          entry.style.display = '';
+          item.style.display = '';
           return;
         }
         var text = entry.textContent.toLowerCase();
-        entry.style.display = text.includes(query) ? '' : 'none';
+        item.style.display = text.includes(query) ? '' : 'none';
       });
     });
   }
