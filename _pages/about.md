@@ -9,9 +9,9 @@ permalink: /about/
 
 <div class="section-card">
 <div class="pi-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="{{ site.name }}" loading="lazy">
+<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="{{ site.pi_name }}" loading="lazy">
 <div>
-<h3 class="pi-name">{{ site.name }}</h3>
+<h3 class="pi-name">{{ site.pi_name }}</h3>
 <p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}, {{ site.institution }}</p>
 <div class="pi-links">
 {% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
@@ -66,7 +66,7 @@ permalink: /about/
 
 {% if site.data.funders %}
 <div class="section-card">
-<h4>Sponsors</h4>
+<h4>Sponsors and Collaborators</h4>
 <div class="sponsor-logos" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-6);">
 {% for funder in site.data.funders %}
 <a href="{{ funder.url }}" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/{{ funder.image }}" alt="Funder logo" style="max-height: 80px; max-width: 200px; border-radius: 0;" loading="lazy"></a>

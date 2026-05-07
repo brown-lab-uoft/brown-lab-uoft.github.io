@@ -1,0 +1,42 @@
+name: Update publications from ORCID
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # Every Monday at 03:00 UTC
+  workflow_dispatch:        # Allow manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch publications from ORCID
+        env:
+          ORCID_ID: "0000-0002-8145-800X"
+        run: python scripts/fetch_orcid.py
+
+      - name: Commit updated ref.bib
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/ref.bib
+          if git diff --cached --quiet; then
+            echo "ref.bib is already up to date — nothing to commit."
+          else
+            git commit -m "chore: update publications from ORCID [skip ci]"
+            git push
+          fi

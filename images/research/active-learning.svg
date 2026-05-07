@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <rect width="400" height="200" fill="#f0ece4"/>
+
+  <!-- Circular flow: 4 nodes at top, right, bottom, left of a circle -->
+  <!-- Center at (200, 100), radius 65 -->
+
+  <!-- Curved arrows (arcs between nodes) -->
+  <!-- Top to Right -->
+  <path d="M 235,52 A 65,65 0 0,1 265,135" fill="none" stroke="#1a7a6d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Right to Bottom -->
+  <path d="M 248,155 A 65,65 0 0,1 165,155" fill="none" stroke="#1a7a6d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Bottom to Left -->
+  <path d="M 152,138 A 65,65 0 0,1 135,55" fill="none" stroke="#1a7a6d" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Left to Top -->
+  <path d="M 155,48 A 65,65 0 0,1 225,42" fill="none" stroke="#1a7a6d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1a7a6d"/>
+    </marker>
+  </defs>
+
+  <!-- Node: Design (top, ~200,35) -->
+  <circle cx="200" cy="35" r="28" fill="#1a7a6d" opacity="0.85"/>
+  <text x="200" y="31" font-family="Georgia,serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">Design</text>
+  <text x="200" y="42" font-family="Georgia,serif" font-size="7.5" fill="white" text-anchor="middle">ML model</text>
+
+  <!-- Node: Make (right, ~265,100) -->
+  <circle cx="268" cy="100" r="28" fill="#b45309" opacity="0.85"/>
+  <text x="268" y="96" font-family="Georgia,serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">Make</text>
+  <text x="268" y="107" font-family="Georgia,serif" font-size="7.5" fill="white" text-anchor="middle">Synthesize</text>
+
+  <!-- Node: Test (bottom, ~200,165) -->
+  <circle cx="200" cy="165" r="28" fill="#1a7a6d" opacity="0.85"/>
+  <text x="200" y="161" font-family="Georgia,serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">Test</text>
+  <text x="200" y="172" font-family="Georgia,serif" font-size="7.5" fill="white" text-anchor="middle">AS-MS assay</text>
+
+  <!-- Node: Learn (left, ~132,100) -->
+  <circle cx="132" cy="100" r="28" fill="#b45309" opacity="0.85"/>
+  <text x="132" y="96" font-family="Georgia,serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">Learn</text>
+  <text x="132" y="107" font-family="Georgia,serif" font-size="7.5" fill="white" text-anchor="middle">Update model</text>
+
+  <!-- Center label -->
+  <text x="200" y="97" font-family="Georgia,serif" font-size="8" fill="#8a857c" text-anchor="middle">Self-driving</text>
+  <text x="200" y="108" font-family="Georgia,serif" font-size="8" fill="#8a857c" text-anchor="middle">laboratory</text>
+</svg>

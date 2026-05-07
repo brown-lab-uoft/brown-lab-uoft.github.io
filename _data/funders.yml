@@ -3,6 +3,18 @@
 # Recommended logo size: max-height 80px
 
 # EXAMPLE -- replace or delete
+  - image: ac-logo.png
+    url: https://acceleration.utoronto.ca/
+  - image: uoft_logo.png
+    url: https://www.pharmacy.utoronto.ca/
+  - image: nserc_logo.png
+    url: https://www.nserc-crsng.gc.ca/
+  # - image: cfi_logo.png
+  #   url: https://www.cfi-rcf.gc.ca/
+  # - image: orf_logo.jpg
+  #   url: https://www.ontarioresearch.ca/
+  # - image: cihr_logo.png
+  #   url: https://cihr-irsc.gc.ca/
 # - image: NSF.png
 #   url: https://www.nsf.gov/
 # - image: doe_logo.png

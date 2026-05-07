@@ -10,50 +10,34 @@ permalink: /research/
 <div class="research-grid">
 
 <div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/qed.svg" class="research-thumb" alt="Feynman diagram">
+<img src="{{ site.url }}{{ site.baseurl }}/images/research/peptide-automation.svg" class="research-thumb" alt="Automated peptide synthesis platform">
 <div class="research-body">
-<h4 class="research-title">Quantum Electrodynamics</h4>
-<p class="research-desc">Development of the path integral formulation of quantum mechanics and its application to quantum electrodynamics (QED). This work introduced Feynman diagrams as a powerful tool for calculating particle interactions, providing an intuitive visual representation of complex quantum processes.</p>
+<h4 class="research-title">Automation in Peptide Synthesis and Testing</h4>
+<p class="research-desc">We operate an automated platform for solid-phase peptide synthesis and direct-to-biology functional testing. By coupling a peptide synthesizer with a liquid-handling robot and downstream assays, we generate structure–activity data at throughputs inaccessible to manual methods, accelerating the exploration of non-natural peptide space with cyclization, N-methylation, and non-canonical amino acids.</p>
 </div>
 </div>
 
 <div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/superfluidity.svg" class="research-thumb" alt="Superfluid helium">
+<img src="{{ site.url }}{{ site.baseurl }}/images/research/as-ms.svg" class="research-thumb" alt="Affinity-selection mass spectrometry">
 <div class="research-body">
-<h4 class="research-title">Superfluidity</h4>
-<p class="research-desc">Quantum mechanical explanation of the behavior of liquid helium near absolute zero. Using path integral methods, we developed a microscopic theory of the lambda transition and explained the energy spectrum of excitations in superfluid helium, including the roton minimum.</p>
+<h4 class="research-title">Innovations in Affinity-Selection MS</h4>
+<p class="research-desc">Affinity-selection mass spectrometry (AS-MS) lets us screen diverse peptide libraries against protein targets without purification, feeding results directly back to the models that design the next experiment. We push the method's boundaries — increasing sensitivity, broadening compatible target classes, and developing new selection formats — to make AS-MS the cornerstone readout of our self-driving laboratory.</p>
 </div>
 </div>
 
 <div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/partons.svg" class="research-thumb" alt="Parton model">
+<img src="{{ site.url }}{{ site.baseurl }}/images/research/antimicrobial.svg" class="research-thumb" alt="Antimicrobial peptides targeting bacterial membranes">
 <div class="research-body">
-<h4 class="research-title">Parton Model</h4>
-<p class="research-desc">A model describing the internal structure of hadrons in terms of point-like constituents called partons. This framework proved essential for interpreting deep inelastic scattering experiments at SLAC and laid the groundwork for quantum chromodynamics (QCD).</p>
+<h4 class="research-title">Target-Specific Antimicrobial Peptides</h4>
+<p class="research-desc">With antimicrobial resistance on the rise, we design peptides that selectively disrupt the membranes of pathogenic bacteria while sparing mammalian cells. Using high-throughput AS-MS screening and computational modeling, we identify sequences that balance potency, selectivity, and proteolytic stability — working toward next-generation antibiotics for drug-resistant infections.</p>
 </div>
 </div>
 
 <div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/quantum-computing.svg" class="research-thumb" alt="Quantum circuit">
+<img src="{{ site.url }}{{ site.baseurl }}/images/research/active-learning.svg" class="research-thumb" alt="Active learning cycle: design, make, test, learn">
 <div class="research-body">
-<h4 class="research-title">Quantum Computing</h4>
-<p class="research-desc">Pioneering proposals for using quantum mechanical systems to perform computation. We demonstrated that classical computers cannot efficiently simulate quantum physics, motivating the development of quantum computers that exploit superposition and entanglement.</p>
-</div>
-</div>
-
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/nanotechnology.svg" class="research-thumb" alt="Atomic manipulation">
-<div class="research-body">
-<h4 class="research-title">Nanotechnology</h4>
-<p class="research-desc">Exploration of the physical possibilities of manipulating matter at the atomic scale. The talk "There's Plenty of Room at the Bottom" envisioned machines that could arrange atoms one by one, anticipating modern nanotechnology and molecular manufacturing.</p>
-</div>
-</div>
-
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/weak-interactions.svg" class="research-thumb" alt="Weak interaction diagram">
-<div class="research-body">
-<h4 class="research-title">Weak Interactions</h4>
-<p class="research-desc">Development of the V-A theory of the weak interaction with Murray Gell-Mann. This theory correctly predicted the structure of weak decays and was later incorporated into the electroweak unification by Weinberg, Salam, and Glashow.</p>
+<h4 class="research-title">Active Learning for Molecular Discovery</h4>
+<p class="research-desc">Rather than surveying chemical space uniformly, our self-driving laboratory uses active learning — Bayesian optimization and uncertainty-aware neural networks — to direct experiments toward the most informative molecules. Each round of AS-MS data sharpens the model, closing the design–make–test–learn loop and accelerating convergence on optimal peptide sequences.</p>
 </div>
 </div>
 
