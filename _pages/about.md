@@ -56,11 +56,17 @@ permalink: /about/
 {% if site.data.people %}
 <div class="section-card">
 <h3>Students and Mentoring</h3>
+{% for group in site.data.people %}
+<h5 style="margin: var(--space-4) 0 var(--space-2); color: var(--text-secondary);">{{ group.group }}</h5>
 <ul>
-{% for student in site.data.people %}
-<li>{{ student.name }}, {{ student.location }} ({{ student.degree }}, {{ student.year }})</li>
+{% for member in group.members %}
+<li>
+  {{ member.name }}{% if member.pub %}<sup>†</sup>{% endif %}{% if member.time %} ({{ member.time }}){% endif %}{% if member.role %} — {{ member.role }}{% endif %}{% if member.current %}; now {{ member.current }}{% endif %}
+</li>
 {% endfor %}
 </ul>
+{% endfor %}
+<p style="font-size: 0.85em; color: var(--text-secondary); margin-top: var(--space-4);">† Co-authored publication with this mentee.</p>
 </div>
 {% endif %}
 

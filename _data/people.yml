@@ -1,31 +1,107 @@
 # Students and mentees, shown on the About page.
-# Each entry needs: name, location, degree, year
-- name: Albert Hibbs
-  location: Caltech
-  degree: Ph.D.
-  year: 1955
+# Organised by role/period. Each group has: group (heading) and members list.
+# Member fields: name, time, role, current
+# Optional: pub: true  (indicates a co-authored publication with this mentee)
 
-- name: George Zweig
-  location: Caltech
-  degree: Ph.D.
-  year: 1964
+- group: "University of Toronto"
+  members:
+    - name: "Mary Calleja"
+      time: "Summer 2026"
+      role: "LDFP USRP Student"
+    - name: "Jongwhi Kim"
+      time: "Summer 2026"
+      role: "LDFP USRP Student"
 
-- name: Giovanni Rossi Lomanitz
-  location: Cornell
-  degree: Ph.D.
-  year: 1951
+- group: "Acceleration Consortium (Staff Scientist)"
+  members:
+    - name: "Justin Wong"
+      time: "Summer 2024"
+      role: "Undergraduate Research, Acceleration Consortium"
+      current: "OD Student, University of Waterloo"
+    - name: "Rubiana Farin"
+      time: "Summer 2024"
+      role: "Undergraduate Research, Acceleration Consortium"
+      current: "MASc Candidate, Biomedical Engineering, University of Toronto"
 
-- name: Thomas Curtright
-  location: Caltech
-  degree: Ph.D.
-  year: 1977
+- group: "Postdoctoral Fellowship, MIT"
+  members:
+    - name: "Patrick Hauck"
+      time: "Sept 2019–Feb 2020"
+      role: "MSc Thesis, MIT Chemistry"
+      current: "Senior Scientist, Novartis"
+    - name: "Sarah Antilla"
+      pub: true
+      time: "Jan 2020–Mar 2024"
+      role: "Graduate Research, MIT Chemistry"
+      current: "Scientist I, Novo Nordisk A/S"
+    - name: "Amanda Cowfer"
+      pub: true
+      time: "Jan 2020–Mar 2024"
+      role: "Graduate Research, MIT Chemistry"
+      current: "Scientist, Snapdragon Chemistry"
+    - name: "Azin Saebi"
+      pub: true
+      time: "Jan 2020–Mar 2024"
+      role: "Graduate Research, MIT Chemistry"
+      current: "Associate Director, Strategy and Growth, Eli Lilly"
+    - name: "Michael Lee"
+      pub: true
+      time: "Oct 2020–Mar 2024"
+      role: "Graduate Research, MIT Chemistry"
+      current: "Senior Advisor, Protomer Technologies"
+    - name: "Stephanie Hanna"
+      time: "Fall 2020"
+      role: "Graduate School Application and Manuscript, MIT Chemistry"
+      current: "PhD Student, Baker Group, University of Washington"
+    - name: "Ridings Bald"
+      time: "Summer 2021"
+      role: "Undergraduate Research, MIT Chemistry"
+      current: "Undergraduate, Physics and CS, MIT"
+    - name: "Lia Lozano Salazar"
+      time: "Fall 2021"
+      role: "Graduate School Application, MIT Chemistry"
+      current: "PhD Candidate, McKinnie Lab, UC Santa Cruz"
+    - name: "Roman Misteli"
+      pub: true
+      time: "Jan–Aug 2022"
+      role: "Co-Supervised MSc Thesis, MIT / ETH Zurich"
+      current: "PhD Student, Bernardes Lab, University of Cambridge"
 
-- name: William Frazer
-  location: Caltech
-  degree: Ph.D.
-  year: 1958
-
-- name: Robert Hellwarth
-  location: Caltech
-  degree: Ph.D.
-  year: 1956
+- group: "Graduate Fellowship, Cornell"
+  members:
+    - name: "Andrew Cosachov"
+      time: "Jan 2014–Jan 2016"
+      role: "Undergraduate Research, Cornell CBE '14"
+      current: "Executive Director, JP Morgan Chase & Co"
+    - name: "Grace He"
+      pub: true
+      time: "Jun 2015–Jun 2017"
+      role: "Undergraduate Research, Cornell CBE '17"
+      current: "Operations and Delivery Senior Manager, COTA"
+    - name: "Akash Vaidya"
+      pub: true
+      time: "Jun 2015–Sept 2018"
+      role: "Undergraduate Research, Cornell CBE '18"
+      current: "PhD Candidate, Solomon Group, University of Delaware"
+    - name: "Vincent Rigoglioso"
+      pub: true
+      time: "Sept 2016–Sept 2018"
+      role: "Undergraduate Research, Cornell CBE '18"
+      current: "Faculty Educator, Germantown, PA"
+    - name: "Joseph Hassler"
+      pub: true
+      time: "Jun 2016–Sept 2018"
+      role: "Undergraduate Research, Cornell CBE '18"
+      current: "PhD, Hackel Group, University of Minnesota"
+    - name: "Nana Antwi"
+      time: "Jun–Dec 2018"
+      role: "Undergraduate Research, Cornell CBE '20"
+      current: "Data Scientist, Synopsys Inc"
+    - name: "Manisha Kunala"
+      time: "Jun–Dec 2018"
+      role: "Undergraduate Research, Cornell CBE '20"
+      current: "PhD Candidate, UMass Chan Medical School"
+    - name: "Chris Mulvaney"
+      time: "Jun–Dec 2018"
+      role: "Undergraduate Research, Cornell CBE '20"
+      current: "Process Engineer, Automation & Control Specialists"
