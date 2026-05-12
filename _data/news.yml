@@ -10,10 +10,18 @@
 #   image       — path relative to images/, e.g. "news/paper-jacs-2025.jpg"
 #   link        — URL to link the headline to (paper, press article, etc.)
 
-- date: "January 1, 2025"
+- date: "May 4, 2026"
+  headline: "Mary Calleja and Jongwhi Kim join the lab as LDFP USRP students"
+  description: "Mary Calleja and Jongwhi Kim have joined the Brown Lab as Leslie Dan Faculty of Pharmacy Undergraduate Summer Research Program (LDFP USRP) students. Welcome to the team!"
+
+- date: "April 15, 2026"
+  headline: "Brown Lab awarded NSERC Discovery Grant"
+  description: "Joseph S. Brown has been awarded a Natural Sciences and Engineering Research Council of Canada (NSERC) Discovery Grant, \"From Sparse Data to Design: A Self-Driven Framework for Accelerating Peptide Design,\" with a Launch Supplement."
+
+- date: "April 1, 2026"
   headline: "Brown Lab website launched"
   description: "The Brown Lab at the University of Toronto has launched its new website. The site will feature lab news, publications, research highlights, and team information. Check back regularly for updates."
 
-- date: "September 1, 2024"
+- date: "January 1, 2026"
   headline: "Brown Lab opens at the Leslie Dan Faculty of Pharmacy"
   description: "Joseph S. Brown joins the University of Toronto as an Assistant Professor in the Leslie Dan Faculty of Pharmacy. The lab will focus on self-driving laboratories for peptide drug discovery, combining automated chemistry with machine learning."

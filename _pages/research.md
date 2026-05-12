@@ -26,7 +26,7 @@ permalink: /research/
 </div>
 
 <div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/antimicrobial.svg" class="research-thumb" alt="Antimicrobial peptides targeting bacterial membranes">
+<img src="{{ site.url }}{{ site.baseurl }}/images/research/peptide-receptor.svg" class="research-thumb" alt="Peptide binding at a receptor interface">
 <div class="research-body">
 <h4 class="research-title">Target-Specific Antimicrobial Peptides</h4>
 <p class="research-desc">With antimicrobial resistance on the rise, we design peptides that selectively disrupt the membranes of pathogenic bacteria while sparing mammalian cells. Using high-throughput AS-MS screening and computational modeling, we identify sequences that balance potency, selectivity, and proteolytic stability — working toward next-generation antibiotics for drug-resistant infections.</p>

@@ -7,7 +7,7 @@ permalink: /team/
 
 ## Team
 
-**We are looking for new team members!**
+We are always looking for folks with experience and/or interest in synthetic organic chemistry, analytical chemistry (mass spectrometry), engineering, and AI/ML. Please reach out if you are well-matched to our research mission.
 
 ## PI
 
@@ -75,7 +75,3 @@ permalink: /team/
 </table>
 </div>
 {% endif %}
-
-## Administrative Support
-
-<a href="mailto:exampleemail@gmail.com">Example staff</a> is helping us (and other groups) with administration.

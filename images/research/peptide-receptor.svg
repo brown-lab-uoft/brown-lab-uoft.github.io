@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <rect width="400" height="200" fill="#f0ece4"/>
+
+  <!-- Receptor protein body (left/centre) -->
+  <path d="M15,25 Q55,10 100,18 Q145,26 165,55 Q180,80 172,115 Q164,148 140,163 Q110,178 72,174 Q35,170 18,145 Q5,120 10,80 Q12,50 15,25 Z" fill="#1a7a6d" opacity="0.18"/>
+  <path d="M15,25 Q55,10 100,18 Q145,26 165,55 Q180,80 172,115 Q164,148 140,163 Q110,178 72,174 Q35,170 18,145 Q5,120 10,80 Q12,50 15,25 Z" fill="none" stroke="#1a7a6d" stroke-width="2" opacity="0.55"/>
+
+  <!-- Alpha helix ribbon elements in receptor bulk -->
+  <path d="M28,55 Q48,48 60,60 Q48,72 28,65 Q23,60 28,55 Z" fill="#1a7a6d" opacity="0.35"/>
+  <path d="M22,105 Q42,98 54,110 Q42,122 22,115 Q17,110 22,105 Z" fill="#1a7a6d" opacity="0.35"/>
+  <path d="M45,148 Q65,141 77,153 Q65,165 45,158 Q40,153 45,148 Z" fill="#1a7a6d" opacity="0.35"/>
+
+  <!-- Binding groove / pocket (open toward right) -->
+  <path d="M112,44 Q148,58 158,92 Q163,120 145,142 Q128,160 104,157 Q80,154 68,132 Q56,110 68,82 Q82,52 112,44 Z" fill="#f0ece4"/>
+  <path d="M112,44 Q148,58 158,92 Q163,120 145,142 Q128,160 104,157 Q80,154 68,132 Q56,110 68,82 Q82,52 112,44 Z" fill="none" stroke="#1a7a6d" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <!-- Pocket label -->
+  <text x="103" y="103" font-family="Georgia,serif" font-size="9" fill="#1a7a6d" text-anchor="middle" opacity="0.8">binding</text>
+  <text x="103" y="115" font-family="Georgia,serif" font-size="9" fill="#1a7a6d" text-anchor="middle" opacity="0.8">pocket</text>
+
+  <!-- Peptide chain backbone -->
+  <path d="M392,22 Q362,28 335,44 Q308,60 285,80 Q262,100 240,116 Q218,130 196,138 Q174,144 154,140 Q140,136 128,126" fill="none" stroke="#b45309" stroke-width="2.5" opacity="0.45"/>
+
+  <!-- Amino acid residues (circles), darkening as they enter the pocket -->
+  <circle cx="385" cy="24" r="11" fill="#f0ece4" stroke="#b45309" stroke-width="2" opacity="0.80"/>
+  <circle cx="358" cy="32" r="11" fill="#f0ece4" stroke="#b45309" stroke-width="2" opacity="0.83"/>
+  <circle cx="330" cy="48" r="11" fill="#f0ece4" stroke="#b45309" stroke-width="2" opacity="0.87"/>
+  <circle cx="303" cy="66" r="11" fill="#f0ece4" stroke="#b45309" stroke-width="2" opacity="0.90"/>
+  <circle cx="277" cy="86" r="11" fill="#f0ece4" stroke="#b45309" stroke-width="2" opacity="0.92"/>
+  <circle cx="252" cy="108" r="11" fill="#f0ece4" stroke="#b45309" stroke-width="2.5" opacity="0.95"/>
+  <circle cx="225" cy="124" r="11" fill="#fde68a" stroke="#b45309" stroke-width="2.5"/>
+  <circle cx="197" cy="136" r="11" fill="#fde68a" stroke="#b45309" stroke-width="2.5"/>
+  <circle cx="167" cy="141" r="11" fill="#fbbf24" stroke="#b45309" stroke-width="3"/>
+
+  <!-- One-letter amino acid codes -->
+  <text x="385" y="28" font-family="Arial" font-size="8" fill="#b45309" text-anchor="middle">G</text>
+  <text x="358" y="36" font-family="Arial" font-size="8" fill="#b45309" text-anchor="middle">R</text>
+  <text x="330" y="52" font-family="Arial" font-size="8" fill="#b45309" text-anchor="middle">K</text>
+  <text x="303" y="70" font-family="Arial" font-size="8" fill="#b45309" text-anchor="middle">L</text>
+  <text x="277" y="90" font-family="Arial" font-size="8" fill="#b45309" text-anchor="middle">F</text>
+  <text x="252" y="112" font-family="Arial" font-size="8" fill="#b45309" text-anchor="middle">W</text>
+  <text x="225" y="128" font-family="Arial" font-size="8" fill="#92400e" text-anchor="middle">V</text>
+  <text x="197" y="140" font-family="Arial" font-size="8" fill="#92400e" text-anchor="middle">A</text>
+  <text x="167" y="145" font-family="Arial" font-size="8" fill="#92400e" text-anchor="middle">K</text>
+
+  <!-- Interaction contacts (dashed lines from peptide residues to groove wall) -->
+  <line x1="167" y1="131" x2="138" y2="120" stroke="#b45309" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.65"/>
+  <line x1="197" y1="126" x2="154" y2="130" stroke="#b45309" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.65"/>
+  <line x1="225" y1="114" x2="155" y2="108" stroke="#b45309" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.60"/>
+
+  <!-- Contact dots on receptor groove wall -->
+  <circle cx="138" cy="120" r="3.5" fill="#1a7a6d" opacity="0.75"/>
+  <circle cx="154" cy="130" r="3.5" fill="#1a7a6d" opacity="0.75"/>
+  <circle cx="155" cy="108" r="3.5" fill="#1a7a6d" opacity="0.70"/>
+
+  <!-- "Peptide" label top-right -->
+  <text x="310" y="18" font-family="Georgia,serif" font-size="10" fill="#8a857c" text-anchor="middle">Peptide</text>
+  <line x1="355" y1="18" x2="375" y2="20" stroke="#8a857c" stroke-width="1" opacity="0.6"/>
+
+  <!-- Bottom label -->
+  <text x="200" y="190" font-family="Georgia,serif" font-size="10" fill="#8a857c" text-anchor="middle">Peptide–receptor binding interaction</text>
+</svg>
