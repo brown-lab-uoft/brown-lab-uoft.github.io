@@ -3,23 +3,27 @@
 // =============================================================
 
 :root {
-  // Accent — a warm scholarly teal
-  --accent: #1a7a6d;
-  --accent-hover: #15655a;
-  --accent-light: rgba(26, 122, 109, 0.08);
+  // Accent — steel blue, sampled from the lab logo (images/logo.png).
+  // Adjust this one value if you want it closer to the logo's exact hue.
+  --accent: #3a6b91;
+  --accent-hover: #2f5876;
+  --accent-light: rgba(58, 107, 145, 0.08);
+  // Text color to use *on top of* a solid --accent background (buttons, chips).
+  // Kept as a token rather than a literal #fff so it can be swapped per-theme in one place.
+  --on-accent: #ffffff;
 
-  // Light mode — warm parchment tones
-  --bg-primary: #f8f6f1;
-  --bg-secondary: #f0ece4;
+  // Light mode — clean white, replacing the previous parchment/beige palette
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f7f8;
   --bg-card: #ffffff;
-  --text-primary: #2c2a25;
-  --text-secondary: #5c5850;
-  --text-muted: #8a857c;
-  --border-color: #e2ded6;
-  --shadow-sm: 0 1px 3px rgba(44, 42, 37, 0.06);
-  --shadow-md: 0 4px 12px rgba(44, 42, 37, 0.08);
-  --shadow-lg: 0 8px 24px rgba(44, 42, 37, 0.1);
-  --shadow-navbar: 0 1px 4px rgba(44, 42, 37, 0.1);
+  --text-primary: #1f2328;
+  --text-secondary: #57606a;
+  --text-muted: #8b949e;
+  --border-color: #e2e5e9;
+  --shadow-sm: 0 1px 3px rgba(15, 15, 15, 0.06);
+  --shadow-md: 0 4px 12px rgba(15, 15, 15, 0.08);
+  --shadow-lg: 0 8px 24px rgba(15, 15, 15, 0.1);
+  --shadow-navbar: 0 1px 4px rgba(15, 15, 15, 0.1);
 
   // Layout
   --container-max: 1100px;
@@ -49,19 +53,20 @@
   --transition-slow: 400ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-// Dark mode — rich warm dark
+// Dark mode — neutral charcoal, paired with a lighter version of the same steel blue
 [data-bs-theme="dark"] {
-  --accent: #3dbaa8;
-  --accent-hover: #5dd4c2;
-  --accent-light: rgba(61, 186, 168, 0.1);
+  --accent: #6fa3c9;
+  --accent-hover: #8fb9d8;
+  --accent-light: rgba(111, 163, 201, 0.12);
+  --on-accent: #0f1216;
 
-  --bg-primary: #1c1b18;
-  --bg-secondary: #262520;
-  --bg-card: #2a2924;
-  --text-primary: #e8e4dc;
-  --text-secondary: #b5b0a5;
-  --text-muted: #7d796f;
-  --border-color: #3d3a33;
+  --bg-primary: #15171a;
+  --bg-secondary: #1d2024;
+  --bg-card: #22252a;
+  --text-primary: #e8eaed;
+  --text-secondary: #b0b6bd;
+  --text-muted: #767c84;
+  --border-color: #33373d;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);

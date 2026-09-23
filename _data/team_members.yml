@@ -1,27 +1,51 @@
 # Current students and postdocs.
 # Each entry needs: name, photo, info
 # Optional: email, website, scholar, github, researchgate, cv
-# Photos go in images/ or images/team/
+# Photos go in images/team/. Ordered postdoc -> PhD students -> undergraduates.
+#
+# NOTE: Luísa Gerhard and Qichen (Martin) Nie don't have a headshot yet — they're
+# using the generic rock.jpg placeholder. Drop a real photo in images/team/ and
+# update the `photo:` field below once you have one.
+
+- name: "Adeline Schmitt"
+  photo: team/adeline-schmitt.jpg
+  info: "Postdoctoral Fellow"
 
 - name: "Luísa Gerhard"
   photo: rock.jpg
-  info: "PhD Student (incoming, Fall 2026)"
+  info: "PhD Student"
 
 - name: "Qichen (Martin) Nie"
   photo: rock.jpg
-  info: "PhD Student (incoming, Fall 2026)"
+  info: "PhD Student"
 
-- name: "Carlos Liu"
-  photo: rock.jpg
-  info: "PhD Student (incoming, Summer 2026)"
+- name: "Carl Liu"
+  photo: team/carl-liu.jpg
+  info: "PhD Student"
 
-- name: "Mary Calleja"
-  photo: rock.jpg
-  info: "LDFP USRP Student (Summer 2026)"
+- name: "Jocelyn Liu"
+  photo: team/jocelyn-liu.jpg
+  info: "Undergraduate Researcher"
 
 - name: "Jongwhi Kim"
-  photo: rock.jpg
-  info: "LDFP USRP Student (Summer 2026)"
+  photo: team/jongwhi-kim.jpg
+  info: "Undergraduate Researcher"
+
+- name: "Louay Rhaiem"
+  photo: team/louay-rhaiem.jpg
+  info: "Undergraduate Researcher"
+
+- name: "Mary Calleja"
+  photo: team/mary-calleja.jpg
+  info: "Undergraduate Researcher"
+
+- name: "Claire Richardson"
+  photo: team/claire-richardson.jpg
+  info: "Undergraduate Researcher"
+
+- name: "Jashvir Rathore"
+  photo: team/jashvir-rathore.jpg
+  info: "Undergraduate Researcher"
 
 - name: "This could be you!"
   photo: rock.jpg

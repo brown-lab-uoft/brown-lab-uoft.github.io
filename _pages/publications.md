@@ -1,8 +1,8 @@
 ---
 title: "Publications"
 layout: gridlay
-sitemap: false
 permalink: /publications/
+description: "Peer-reviewed publications from the Brown Lab at the University of Toronto on peptide drug discovery, affinity-selection mass spectrometry, and self-driving laboratories."
 ---
 
 ## Publications

@@ -18,8 +18,8 @@
 
   &.btn-pdf {
     background-color: var(--accent);
-    color: #fff;
-    &:hover { background-color: var(--accent-hover); color: #fff; }
+    color: var(--on-accent);
+    &:hover { background-color: var(--accent-hover); color: var(--on-accent); }
   }
 
   &.btn-doi {
@@ -30,8 +30,8 @@
 
   &.btn-arxiv {
     background-color: #b31b1b;
-    color: #fff;
-    &:hover { background-color: #8c1515; color: #fff; }
+    color: var(--on-accent);
+    &:hover { background-color: #8c1515; color: var(--on-accent); }
   }
 
   &.btn-bib,
@@ -47,8 +47,8 @@
 
   &.btn-website {
     background-color: var(--accent);
-    color: #fff;
-    &:hover { background-color: var(--accent-hover); color: #fff; }
+    color: var(--on-accent);
+    &:hover { background-color: var(--accent-hover); color: var(--on-accent); }
   }
 
   &.btn-git {
@@ -59,8 +59,8 @@
 
   &.btn-paper {
     background-color: #b31b1b;
-    color: #fff;
-    &:hover { background-color: #8c1515; color: #fff; }
+    color: var(--on-accent);
+    &:hover { background-color: #8c1515; color: var(--on-accent); }
   }
 }
 

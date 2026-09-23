@@ -1,8 +1,8 @@
 ---
 title: "Team"
 layout: gridlay
-sitemap: false
 permalink: /team/
+description: "Meet the Brown Lab team at the University of Toronto: postdoctoral fellows, PhD students, and undergraduate researchers working on peptide drug discovery and self-driving laboratories."
 ---
 
 ## Team
@@ -13,9 +13,9 @@ We are always looking for folks with experience and/or interest in synthetic org
 
 <div class="section-card">
 <div class="pi-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="{{ site.name }}" loading="lazy">
+<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="{{ site.pi_name }}" loading="lazy">
 <div>
-<h3 class="pi-name">{{ site.name }}</h3>
+<h3 class="pi-name">{{ site.pi_name }}</h3>
 <p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}, {{ site.institution }}</p>
 <div class="pi-links">
 {% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}

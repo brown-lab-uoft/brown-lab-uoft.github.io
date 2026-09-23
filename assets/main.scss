@@ -43,7 +43,10 @@ $baseurl: "{{ site.url }}{{ site.baseurl }}";
 
 // Layouts
 @import "layouts/grid";
+@import "layouts/hero";
 @import "layouts/home";
+@import "layouts/contact";
+@import "layouts/gallery";
 @import "layouts/team";
 @import "layouts/research";
 

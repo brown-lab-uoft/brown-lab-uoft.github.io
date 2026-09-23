@@ -1,0 +1,50 @@
+// =============================================================
+// Contact Us section (homepage) — address + embedded map
+// =============================================================
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: stretch;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  .contact-photo {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+    max-height: 220px;
+    border: 1px solid var(--border-color);
+  }
+
+  address {
+    font-style: normal;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 0.9375rem;
+  }
+}
+
+.contact-map {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  min-height: 260px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    border: 0;
+    display: block;
+  }
+}

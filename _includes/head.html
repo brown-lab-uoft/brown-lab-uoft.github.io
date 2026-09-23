@@ -2,18 +2,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.name | escape }}{% else %}{{ site.name | escape }}{% endif %}</title>
-  <meta name="description" content="{{ site.description }}">
+  {% comment %}
+    Per-page SEO fields: set `description:` (and optionally `image:`, a filename under
+    images/) in a page's front matter to override the sitewide defaults below. See SEO.md.
+  {% endcomment %}
+  {% assign page_description = page.description | default: site.description %}
+  {% assign page_image = page.image | default: "logo.png" %}
+  <meta name="description" content="{{ page_description | escape }}">
 
   <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:type" content="website">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
-  {% if site.photo %}<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">{% endif %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ page_image }}">
+  {% comment %} "summary" (not summary_large_image) because the fallback image (logo.png) is
+     roughly square — switch this once a real 1200x630 OG image exists (see SEO.md). {% endcomment %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
-  <meta name="twitter:description" content="{{ site.description }}">
-  {% if site.photo %}<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">{% endif %}
+  <meta name="twitter:description" content="{{ page_description | escape }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ page_image }}">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,23 +66,41 @@
 
   {% include mathjax.html %}
 
-  <!-- JSON-LD Structured Data -->
+  {% comment %}
+    JSON-LD Structured Data. Two separate top-level entities:
+    - Person: the PI. Previously this used `site.name` (the LAB's name, "Brown Lab at
+      UofT") as the Person's name — a real bug, since it told crawlers a person named
+      "Brown Lab at UofT" holds the PI's job title. Fixed to use `site.pi_name`.
+    - Organization: previously a bare stub with just "University of Toronto" and no
+      URL. Now includes the Faculty and the Acceleration Consortium affiliation too,
+      since both are real and appear in prose elsewhere on the site (home/about/grants)
+      but were invisible to structured-data consumers.
+  {% endcomment %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "{% if page.url == '/' %}WebSite{% else %}WebPage{% endif %}",
     "name": "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}",
     "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-    "description": "{{ site.description | escape }}",
+    "description": "{{ page_description | escape }}",
     "author": {
       "@type": "Person",
-      "name": "{{ site.name | escape }}",
+      "name": "{{ site.pi_name | escape }}",
       "jobTitle": "{{ site.title | escape }}",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "{{ site.institution | escape }}"
-      }{% if site.links.google_scholar and site.links.google_scholar != "" %},
-      "sameAs": ["{{ site.links.google_scholar }}"{% if site.links.github and site.links.github != "" %}, "{{ site.links.github }}"{% endif %}{% if site.links.orcid and site.links.orcid != "" %}, "{{ site.links.orcid }}"{% endif %}]{% endif %}
+      "email": "{{ site.email }}",
+      "affiliation": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Leslie Dan Faculty of Pharmacy, University of Toronto",
+          "url": "https://www.pharmacy.utoronto.ca/"
+        },
+        {
+          "@type": "Organization",
+          "name": "Acceleration Consortium",
+          "url": "https://acceleration.utoronto.ca/"
+        }
+      ]{% if site.links.google_scholar and site.links.google_scholar != "" %},
+      "sameAs": ["{{ site.links.google_scholar }}"{% if site.links.orcid and site.links.orcid != "" %}, "{{ site.links.orcid }}"{% endif %}{% if site.links.linkedin and site.links.linkedin != "" %}, "{{ site.links.linkedin }}"{% endif %}{% if site.links.github and site.links.github != "" %}, "{{ site.links.github }}"{% endif %}]{% endif %}
     }
   }
   </script>
