@@ -1,12 +1,18 @@
 ---
 title: "Home"
 layout: homelay
-sitemap: false
 permalink: /
+description: "The Brown Lab at the University of Toronto builds a self-driving laboratory for peptide drug discovery, combining affinity-selection mass spectrometry (AS-MS), automated peptide synthesis, and active learning to design antimicrobial peptides against drug-resistant infections."
 ---
 
-<h2 class="home-hero">Peptide Self-Driving Lab</h2>
-<p class="home-hero-sub">Lab of Joseph S. Brown at the University of Toronto</p>
+<div class="hero-banner hero-banner--light" markdown="0">
+<img src="{{ site.url }}{{ site.baseurl }}/images/banner/toronto-skyline.png" alt="Toronto skyline" class="hero-banner-img">
+<div class="hero-scrim"></div>
+<div class="hero-text">
+<h1 class="hero-title">Brown Lab</h1>
+<p class="hero-subtitle">at Leslie Dan Faculty of Pharmacy<br>University of Toronto</p>
+</div>
+</div>
 
 <div class="chip-container" markdown="0">
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Peptide Drug Discovery</a>
@@ -17,6 +23,8 @@ permalink: /
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Antimicrobial Resistance</a>
 </div>
 
+## About Us
+
 Peptides sit between small molecules and proteins in size and complexity.
 With the right chemistry — cyclization, non-natural amino acids, methylation — they can match the potency and selectivity of antibodies while keeping the drug-like properties of small molecules.
 Peptides are no longer a niche modality: Blockbusters like Ozempic anchor a $72-billion-and-growing market, peptides now account for more than 8% of FDA approvals, and roughly 13% of Americans have tried one.
@@ -25,8 +33,32 @@ Yet navigating the effectively infinite chemical space of non-natural peptides r
 We are building a **self-driving laboratory (SDL) for peptide drug discovery** — an AI-directed loop where each round of wet-lab experiments generates data that improves the next round of model-driven design.
 We rely on direct-to-biology methods, particularly **affinity-selection mass spectrometry (AS-MS)**, to evaluate molecules without purification and feed results immediately back to the models that design the next experiment.
 
-### About me
+Read more about the [research areas]({{ site.url }}{{ site.baseurl }}/research/) that make this possible, meet the [team]({{ site.url }}{{ site.baseurl }}/team/) behind it, or learn about the [PI]({{ site.url }}{{ site.baseurl }}/about/).
 
-Joseph S. Brown is an Assistant Professor at the Leslie Dan Faculty of Pharmacy and Faculty Advisor to the Medicinal Chemistry Self-Driving Lab (MedChem SDL) at the University of Toronto.
-Before his faculty appointment, he was a PhRMA Foundation Drug Discovery Postdoctoral Fellow at MIT with Bradley Pentelute, specializing in combining machine learning with AS-MS to identify high-affinity ligands from diverse peptide and abiotic libraries.
-He earned his PhD in Chemical and Biomolecular Engineering from Cornell University with Christopher Alabi as a National Science Foundation Graduate Research Fellow.
+## The Lab
+
+<div class="group-photo-section" markdown="0">
+<div class="banner-frame">
+<img src="{{ site.url }}{{ site.baseurl }}/images/group/group-photo-main.jpg" alt="The Brown Lab group photo, Summer 2026">
+<div class="banner-caption">The Brown Lab, Summer 2026</div>
+</div>
+</div>
+
+## Contact Us
+
+<div class="contact-grid" markdown="0">
+<div class="contact-details">
+<img src="{{ site.url }}{{ site.baseurl }}/images/contact/jb-contact.jpg" alt="" class="contact-photo" loading="lazy">
+<address>
+{{ site.address.building }}<br>
+{{ site.address.street }}<br>
+{{ site.address.city }}, {{ site.address.region }} {{ site.address.postal_code }}<br>
+{{ site.address.country }}
+</address>
+<p><a href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope"></i> {{ site.email }}</a></p>
+</div>
+{% assign map_address = site.address.building | append: ", " | append: site.address.street | append: ", " | append: site.address.city | append: ", " | append: site.address.region | append: " " | append: site.address.postal_code %}
+<div class="contact-map">
+<iframe src="https://www.google.com/maps?q={{ map_address | uri_escape }}&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to {{ site.address.building }}"></iframe>
+</div>
+</div>

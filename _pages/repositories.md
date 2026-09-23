@@ -1,27 +1,24 @@
 ---
-title: "Software"
+title: "Repositories"
 layout: gridlay
-sitemap: false
-permalink: /software/
+permalink: /repositories/
+description: "Open-source software and code repositories from the Brown Lab at the University of Toronto."
 ---
 
-## Software
+## Repositories
+
+<p style="color: var(--text-secondary); margin-bottom: var(--space-6);">Open-source tools and code from the lab.</p>
+
+<!--
+To add a repository, copy and uncomment a block like the one below and fill in your details.
 
 <div class="section-card">
-<h4>Path Integral Monte Carlo</h4>
+<h4>Repository Name</h4>
 <div class="pub-actions" style="margin-bottom: var(--space-3);">
-<a href="https://example.com" target="_blank" class="btn-pill btn-website">Website</a>
-<a href="https://github.com" target="_blank" class="btn-pill btn-git">Git</a>
+<a href="https://github.com/brown-lab-uoft/repo-name" target="_blank" class="btn-pill btn-git">GitHub</a>
+<a href="https://repo-docs-or-demo-link.com" target="_blank" class="btn-pill btn-website">Docs</a>
 </div>
-<p><strong>Authors:</strong> <em>R. P. Feynman, A. Hibbs</em></p>
-<p>A Monte Carlo simulation code for computing quantum mechanical path integrals in many-body systems. Used to study the lambda transition in liquid helium and other quantum statistical mechanics problems.</p>
+<p><strong>Authors:</strong> <em>First Last, First Last</em></p>
+<p>One or two sentences describing what the tool does and why it's useful.</p>
 </div>
-
-<div class="section-card">
-<h4>QED Diagram Calculator</h4>
-<div class="pub-actions" style="margin-bottom: var(--space-3);">
-<a href="https://example.com" target="_blank" class="btn-pill btn-website">Website</a>
-</div>
-<p><strong>Authors:</strong> <em>R. P. Feynman</em></p>
-<p>A tool for systematically enumerating and evaluating Feynman diagrams in quantum electrodynamics calculations, automating the computation of scattering amplitudes to arbitrary order in perturbation theory.</p>
-</div>
+-->

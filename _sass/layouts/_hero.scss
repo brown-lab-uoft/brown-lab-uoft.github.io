@@ -1,0 +1,102 @@
+// =============================================================
+// Homepage hero — full-bleed banner with centered text overlay
+// =============================================================
+// Breaks out of .site-container's max-width using the classic
+// 100vw + negative-margin full-bleed trick, and cancels the
+// container's top padding so it sits flush under the navbar.
+
+.hero-banner {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: calc(-1 * var(--space-8));
+  margin-bottom: var(--space-10);
+  height: clamp(280px, 38vw, 420px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-banner-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-scrim {
+    position: absolute;
+    inset: 0;
+    display: none;
+  }
+
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 var(--space-6);
+    max-width: 40rem;
+  }
+
+  .hero-title {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    margin: 0 0 var(--space-2);
+
+    &::after { display: none; }
+  }
+
+  .hero-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.1875rem);
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  // Default (photo) variant — dark scrim behind white text, for a busier background image
+  &:not(.hero-banner--light) {
+    .hero-scrim {
+      display: block;
+      background: linear-gradient(180deg, rgba(15, 15, 15, 0.32) 0%, rgba(15, 15, 15, 0.5) 100%);
+    }
+    .hero-title,
+    .hero-subtitle {
+      color: #ffffff;
+    }
+    .hero-subtitle {
+      color: rgba(255, 255, 255, 0.92);
+    }
+  }
+
+  // Light variant — for a mostly-white/graphic background (e.g. the skyline banner),
+  // where dark text reads better than a scrim + white text. The background here is
+  // always light regardless of site theme, so the text colors are fixed literals, NOT
+  // var(--text-primary)/var(--text-secondary) — those flip to near-white in dark mode,
+  // which made the title nearly invisible against this always-white banner.
+  &.hero-banner--light {
+    background-color: #ffffff;
+
+    .hero-title {
+      color: #1f2328;
+    }
+    .hero-subtitle {
+      color: #57606a;
+    }
+  }
+}
+
+// Group photo — reuses the .banner-frame treatment (rounded frame, caption bar)
+.group-photo-section {
+  text-align: center;
+
+  .banner-frame {
+    text-align: left;
+  }
+}

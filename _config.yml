@@ -20,15 +20,35 @@ links:
 # ============================================================
 # STEP 3: Site Settings
 # ============================================================
-accent_color: "#0a8201"      # theme color for links and buttons
+# Theme color for links, chips, and buttons. This is injected as a CSS custom property
+# override in _includes/head.html *after* main.css loads, so it always wins over the
+# --accent default baked into _sass/base/_variables.scss — keep the two in sync (or you'll
+# get the surprise this comment is here to prevent: change one, the site doesn't visibly
+# change, because the other one is still winning the cascade).
+accent_color: "#3a6b91"
 dark_mode: true              # show dark mode toggle in navbar
-description: "Academic webpage of Dr. Joseph S. Brown, Brown Lab, University of Toronto"
+# Sitewide fallback meta description — shown in search results for any page that
+# doesn't set its own `description:` in front matter. Keep this keyword-rich since
+# it's also the fallback og:description/twitter:description (see _includes/head.html).
+description: "The Brown Lab at the University of Toronto builds a self-driving laboratory for peptide drug discovery, combining affinity-selection mass spectrometry (AS-MS), automated peptide synthesis, and active learning to design antimicrobial peptides against drug-resistant infections."
 baseurl: ""
 url: "https://brown-lab-uoft.github.io"
+lang: "en-CA"                # drives <html lang> in _layouts/default.html
 
 # Google Analytics — paste your GA4 measurement ID, or leave blank
 analytics:
   google_id: ""
+
+# Lab mailing address — single source of truth for the homepage Contact Us section
+# and the keyless Google Maps embed (built from these fields in _pages/home.md).
+# Update here if the lab ever moves; nothing else needs to change.
+address:
+  building: "Leslie Dan Faculty of Pharmacy"
+  street: "144 College Street"
+  city: "Toronto"
+  region: "ON"
+  postal_code: "M5S 3M2"
+  country: "Canada"
 
 # ============================================================
 # STEP 4: Choose Your Pages (comment out any you don't need)
@@ -38,7 +58,8 @@ nav_pages:
   - name: publications
   - name: research
   - name: team
-  - name: media
+  - name: repositories
+  - name: gallery
   - name: news
 
 # ============================================================
