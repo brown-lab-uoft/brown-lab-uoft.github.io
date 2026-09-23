@@ -1,8 +1,8 @@
 ---
 title: "About"
 layout: gridlay
-sitemap: false
 permalink: /about/
+description: "Joseph S. Brown is an Assistant Professor at the Leslie Dan Faculty of Pharmacy, University of Toronto, and Faculty Advisor to the Medicinal Chemistry Self-Driving Lab (MedChem SDL). Education, grants, awards, and mentoring."
 ---
 
 ## About
@@ -29,6 +29,12 @@ permalink: /about/
 {% endif %}
 </div>
 </div>
+</div>
+
+<div class="section-card">
+Joseph S. Brown is an Assistant Professor at the Leslie Dan Faculty of Pharmacy and Faculty Advisor to the Medicinal Chemistry Self-Driving Lab (MedChem SDL) at the University of Toronto.
+Before his faculty appointment, he was a PhRMA Foundation Drug Discovery Postdoctoral Fellow at MIT with Bradley Pentelute, specializing in combining machine learning with AS-MS to identify high-affinity ligands from diverse peptide and abiotic libraries.
+He earned his PhD in Chemical and Biomolecular Engineering from Cornell University with Christopher Alabi as a National Science Foundation Graduate Research Fellow.
 </div>
 
 {% if site.data.grants %}
