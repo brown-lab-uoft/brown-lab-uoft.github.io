@@ -2,21 +2,17 @@
 # Each entry needs: name, photo, info
 # Optional: email, website, scholar, github, researchgate, cv
 # Photos go in images/team/. Ordered postdoc -> PhD students -> undergraduates.
-#
-# NOTE: Luísa Gerhard and Qichen (Martin) Nie don't have a headshot yet — they're
-# using the generic rock.jpg placeholder. Drop a real photo in images/team/ and
-# update the `photo:` field below once you have one.
 
 - name: "Adeline Schmitt"
   photo: team/adeline-schmitt.jpg
   info: "Postdoctoral Fellow"
 
 - name: "Luísa Gerhard"
-  photo: rock.jpg
+  photo: team/luisa-gerhard.png
   info: "PhD Student"
 
 - name: "Qichen (Martin) Nie"
-  photo: rock.jpg
+  photo: team/martin-nie.jpg
   info: "PhD Student"
 
 - name: "Carl Liu"

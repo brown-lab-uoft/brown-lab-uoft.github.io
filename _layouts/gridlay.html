@@ -3,5 +3,10 @@ layout: default
 ---
 
 <div class="fade-in-section">
+  {% if page.banner %}
+  <div class="page-banner" markdown="0">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/{{ page.banner }}" alt="">
+  </div>
+  {% endif %}
   {{ content }}
 </div>

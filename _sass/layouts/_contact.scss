@@ -2,6 +2,15 @@
 // Contact Us section (homepage) — address + embedded map
 // =============================================================
 
+.contact-letterhead {
+  text-align: center;
+
+  .contact-logo {
+    max-width: 140px;
+    margin: 0 auto var(--space-6);
+  }
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

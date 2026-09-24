@@ -2,6 +2,7 @@
 title: "News"
 layout: gridlay
 permalink: /news/
+banner: gallery/xray-detector.jpg
 description: "Latest news from the Brown Lab at the University of Toronto: new team members, publications, grants, and lab milestones."
 ---
 

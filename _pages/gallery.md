@@ -17,10 +17,6 @@ description: "Photos from the Brown Lab at the University of Toronto: the lab in
 <div class="gallery-caption">Peptide library synthesis</div>
 </div>
 <div class="gallery-item">
-<img src="{{ site.url }}{{ site.baseurl }}/images/gallery/colorful-test-tubes.jpg" alt="Peptide library screening samples" loading="lazy">
-<div class="gallery-caption">Peptide library, ready for screening</div>
-</div>
-<div class="gallery-item">
 <img src="{{ site.url }}{{ site.baseurl }}/images/gallery/mass-spectrometer-interior.jpg" alt="Inside a mass spectrometer" loading="lazy">
 <div class="gallery-caption">Inside the mass spectrometer</div>
 </div>

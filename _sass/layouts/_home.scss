@@ -41,6 +41,34 @@
   }
 }
 
+// Sponsors and Collaborators (homepage, bottom)
+// Logos get a fixed white card regardless of theme: several funder logos (e.g. NSERC)
+// are dark artwork on a transparent background, which disappears against the dark-mode
+// page background without this.
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-3) var(--space-5);
+  }
+
+  img {
+    max-height: 90px;
+    max-width: 240px;
+    border-radius: 0;
+  }
+}
+
 // News timeline (used on the /news/ page)
 .news-timeline {
   margin-top: 0;
