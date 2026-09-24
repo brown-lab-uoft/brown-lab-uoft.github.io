@@ -7,7 +7,7 @@
     images/) in a page's front matter to override the sitewide defaults below. See SEO.md.
   {% endcomment %}
   {% assign page_description = page.description | default: site.description %}
-  {% assign page_image = page.image | default: "logo.png" %}
+  {% assign page_image = page.image | default: "logo_large.png" %}
   <meta name="description" content="{{ page_description | escape }}">
 
   <!-- Open Graph / Social Sharing -->

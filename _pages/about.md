@@ -2,6 +2,7 @@
 title: "About"
 layout: gridlay
 permalink: /about/
+banner: gallery/peptide-library-synthesis-2.jpg
 description: "Joseph S. Brown is an Assistant Professor at the Leslie Dan Faculty of Pharmacy, University of Toronto, and Faculty Advisor to the Medicinal Chemistry Self-Driving Lab (MedChem SDL). Education, grants, awards, and mentoring."
 ---
 
@@ -73,16 +74,5 @@ He earned his PhD in Chemical and Biomolecular Engineering from Cornell Universi
 </ul>
 {% endfor %}
 <p style="font-size: 0.85em; color: var(--text-secondary); margin-top: var(--space-4);">† Co-authored publication with this mentee.</p>
-</div>
-{% endif %}
-
-{% if site.data.funders %}
-<div class="section-card">
-<h4>Sponsors and Collaborators</h4>
-<div class="sponsor-logos" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-6);">
-{% for funder in site.data.funders %}
-<a href="{{ funder.url }}" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/{{ funder.image }}" alt="Funder logo" style="max-height: 80px; max-width: 200px; border-radius: 0;" loading="lazy"></a>
-{% endfor %}
-</div>
 </div>
 {% endif %}

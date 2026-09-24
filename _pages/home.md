@@ -5,8 +5,8 @@ permalink: /
 description: "The Brown Lab at the University of Toronto builds a self-driving laboratory for peptide drug discovery, combining affinity-selection mass spectrometry (AS-MS), automated peptide synthesis, and active learning to design antimicrobial peptides against drug-resistant infections."
 ---
 
-<div class="hero-banner hero-banner--light" markdown="0">
-<img src="{{ site.url }}{{ site.baseurl }}/images/banner/toronto-skyline.png" alt="Toronto skyline" class="hero-banner-img">
+<div class="hero-banner" markdown="0">
+<img src="{{ site.url }}{{ site.baseurl }}/images/banner/colorful-test-tubes.jpg" alt="Peptide library, ready for screening" class="hero-banner-img">
 <div class="hero-scrim"></div>
 <div class="hero-text">
 <h1 class="hero-title">Brown Lab</h1>
@@ -46,6 +46,10 @@ Read more about the [research areas]({{ site.url }}{{ site.baseurl }}/research/)
 
 ## Contact Us
 
+<div class="contact-letterhead" markdown="0">
+<img src="{{ site.url }}{{ site.baseurl }}/images/logo_large.png" alt="Brown Lab logo" class="contact-logo">
+</div>
+
 <div class="contact-grid" markdown="0">
 <div class="contact-details">
 <img src="{{ site.url }}{{ site.baseurl }}/images/contact/jb-contact.jpg" alt="" class="contact-photo" loading="lazy">
@@ -62,3 +66,13 @@ Read more about the [research areas]({{ site.url }}{{ site.baseurl }}/research/)
 <iframe src="https://www.google.com/maps?q={{ map_address | uri_escape }}&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to {{ site.address.building }}"></iframe>
 </div>
 </div>
+
+{% if site.data.funders %}
+## Sponsors and Collaborators
+
+<div class="sponsor-logos" markdown="0">
+{% for funder in site.data.funders %}
+<a href="{{ funder.url }}" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/{{ funder.image }}" alt="Funder logo" class="sponsor-logo" loading="lazy"></a>
+{% endfor %}
+</div>
+{% endif %}

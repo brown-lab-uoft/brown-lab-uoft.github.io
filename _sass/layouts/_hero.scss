@@ -100,3 +100,25 @@
     text-align: left;
   }
 }
+
+// Page banner — shorter full-bleed strip used above interior page content (About,
+// Publications, Team, Repositories, News). No text overlay, just the photo — set via
+// `banner: path/under/images.jpg` in a page's front matter (see _layouts/gridlay.html).
+.page-banner {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: calc(-1 * var(--space-8));
+  margin-bottom: var(--space-10);
+  height: clamp(140px, 20vw, 220px);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+}

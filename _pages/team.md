@@ -2,6 +2,7 @@
 title: "Team"
 layout: gridlay
 permalink: /team/
+banner: gallery/peptide-library-synthesis-2.jpg
 description: "Meet the Brown Lab team at the University of Toronto: postdoctoral fellows, PhD students, and undergraduate researchers working on peptide drug discovery and self-driving laboratories."
 ---
 
