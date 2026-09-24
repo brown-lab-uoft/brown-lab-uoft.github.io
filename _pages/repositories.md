@@ -2,7 +2,7 @@
 title: "Repositories"
 layout: gridlay
 permalink: /repositories/
-banner: gallery/mass-spectrometer-interior.jpg
+banner: gallery/hydrogel-microscopy.jpg
 description: "Open-source software and code repositories from the Brown Lab at the University of Toronto."
 ---
 
